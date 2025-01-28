@@ -1,0 +1,98 @@
+# Site settings
+baseURL = "https://erifilimorfidis.com"
+languageCode = "en-US"
+title = "Erifili Morfidis Website"
+theme = "hugo-split-theme"
+disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
+disableHugoGeneratorInject = true
+
+# Local preview mode
+relativeURLs = true
+uglyURLs = false
+
+# Copyright
+copyright = "&copy;2025 Erifili Morfidis"
+
+[services]
+  [services.googleAnalytics]
+    # Enter your tracking code to enable Google Analytics
+    ID = " "
+
+[params]
+
+  # Metadata for search engines and social sharing
+  author = "Erifili Morfidis"
+  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+
+  # Favicon
+  favicon = "favicon.ico"
+
+  # Section - Visual
+  [params.visual]
+
+    # Image
+    [params.visual.image]
+      enable = true
+      file = "images/background.jpg"
+      position = "center center"
+
+    # Video
+    [params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      # youtubeId = "dk9uNWPP7EA"
+
+  # Links
+  #
+  # Links List #1
+  [[params.links]]
+    [params.links.list1]
+      heading = "Connect"
+
+      [[params.links.list1.link]]
+        text = "Book an Appointment"
+        url = "https://calendly.com/erifili-morfidis-sterling1on1"
+        new_tab = true
+
+      [[params.links.list1.link]]
+        text = "Email"
+        url = "#"
+        new_tab = false # Default, open at same tab
+
+  # Links List #2
+  [[params.links]]
+    [params.links.list2]
+      heading = "Social"
+
+      [[params.links.list2.link]]
+        text = "Linkedin"
+        url = "https://www.linkedin.com/in/erifilimorfidis/"
+
+      [[params.links.list2.link]]
+        text = "UofT"
+        url = "https://www.rotman.utoronto.ca/programs/startup/mentor-directory/erifili-morfidis/"
+
+  # Links List #3
+  [[params.links]]
+    [params.links.list3]
+      heading = "News"
+
+      [[params.links.list3.link]]
+        text = "The Globe and Mail"
+        url = "https://www.theglobeandmail.com/business/adv/article-how-irestifys-technology-and-services-are-transforming-building/"
+
+      [[params.links.list3.link]]
+        text = "Canadian Technology Accelerator"
+        url = "https://ctaconnects.com/2021/03/2021-cta-digital-silicon-valley/"
+
+ 
+[server]
+[[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com"
+      Referrer-Policy = 'strict-origin-when-cross-origin'
+      X-Content-Type-Options = 'nosniff'
+      X-Frame-Options = 'DENY'
+      X-XSS-Protection = '1; mode=block'
