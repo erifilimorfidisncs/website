@@ -9,6 +9,7 @@ disableHugoGeneratorInject = true
 # Local preview mode
 relativeURLs = true
 uglyURLs = false
+enableRobotsTXT = false
 
 # Copyright
 copyright = "&copy;2025 Erifili Morfidis"
@@ -22,7 +23,7 @@ copyright = "&copy;2025 Erifili Morfidis"
 
   # Metadata for search engines and social sharing
   author = "Erifili Morfidis"
-  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
+  description = "Erifili Morfidis - CEO/Entrepreneur"
 
   # Favicon
   favicon = "favicon.ico"
