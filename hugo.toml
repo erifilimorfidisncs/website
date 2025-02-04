@@ -16,7 +16,7 @@ copyright = "&copy;2025 Erifili Morfidis"
 [services]
   [services.googleAnalytics]
     # Enter your tracking code to enable Google Analytics
-    ID = " "
+    ID = "G-28SLTYRJ77"
 
 [params]
 
